@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="judul">Sistem Informasi Akademik</h1>
+    <p id="isi"></p>
+    <button id="klik">Website Siakad ITERA</button>
+    <h4>Pillio Ardhil</h4>
+
+    <script>
+        const teks = document.getElementById("judul");
+        teks.innerHTML = "Ini Judulnya";
+
+        const element = document.getElementById('isi');
+        const nelement = document.createElement('teks');
+        const neteks = document.createTextNode("ini sudah diganti");
+        nelement.appendChild(neteks);
+        element.appendChild(nelement);
+
+        const link = document.getElementById('klik');
+        link.addEventListener('click',function(link){
+        link.preventDefault();
+        window.location.href="http://siakad.itera.ac.id/";
+        });
+    </script>
+
+</body>
+</html>
